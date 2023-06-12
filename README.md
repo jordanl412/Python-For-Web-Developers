@@ -5,7 +5,7 @@
 2. [Set Up a Virtual Environment](#set-up-a-virtual-environment)
 3. [Create a Python Script](#create-a-python-script)
 5. [Set Up IPython Shell](#set-up-ipython-shell)
-7. [Export a Requirements File](#export-a-requierments-file)
+7. [Export a Requirements File](#export-a-requirements-file)
 8. [Create a GitHub Repository](#create-a-github-repository)
 
 ### Install Python
