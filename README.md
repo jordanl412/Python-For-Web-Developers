@@ -1,7 +1,7 @@
 # Python For Web Developers
 
 ## Exercise 1
-1. Install Python
+1. [Install Python](#install-python)
 2. Set Up a Virtual Environment
 3. Create a Python Script
 4. Set Up IPython Shell
