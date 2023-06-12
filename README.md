@@ -33,9 +33,9 @@ Set up IPython Shell in the virtual environment "cf-python-base". An IPython she
 Generate a “requirements.txt” file from your source environment. To do this, run `pip freeze > requirements.txt` in the Terminal. 
 Next, create a new environment called “cf-python-copy” with the `mkvirtualenv cf-python-copy` command. To switch environments, simply use the command `workon <"new environment">`. Once you've moved to the cf-python-copy environment, install packages from the “requirements.txt” file by running the command `pip install -r requirements.txt`.
 
-![Step 5a](./Exercise1.1/Screenshots/step_5_pip_freeze_requirements.png)
-![Step 5b](./Exercise1.1/Screenshots/step_5_new_environment.png)
-![Step 5c](./Exercise1.1/Screenshots/step_5_pip_install_requirements.png)
+![Step 5a](./Exercise1.1/Screenshots/step_5(a)_pip_freeze_requirements.png)
+![Step 5b](./Exercise1.1/Screenshots/step_5(b)_new_environment.png)
+![Step 5c](./Exercise1.1/Screenshots/step_5(b)_pip_install_requirements.png)
 
 ### Create a GitHub Repository
 Create a new GitHub Repository for the Achievement.
