@@ -2,11 +2,11 @@
 
 ## Exercise 1
 1. [Install Python](#install-python)
-2. Set Up a Virtual Environment
-3. Create a Python Script
-4. Set Up IPython Shell
-5. Export a Requirements File
-6. Create a GitHub Repository
+2. [Set Up a Virtual Environment](#set-up-a-virtual-environment)
+3. [Create a Python Script](#create-a-python-script)
+5. [Set Up IPython Shell](#set-up-ipython-shell)
+7. [Export a Requirements File](#export-a-requierments-file)
+8. [Create a GitHub Repository](#create-a-github-repository)
 
 ### Install Python
 First, install Python on your system. Check your Python version by running the command `python3 --version` in the Terminal.
