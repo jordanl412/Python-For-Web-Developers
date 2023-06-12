@@ -25,3 +25,4 @@ Generate a “requirements.txt” file from your source environment. To do this,
 Next, create a new environment called “cf-python-copy” with the `mkvirtualenv cf-python-copy` command. To switch environments, simply use the command `workon <"new environment">`. Once you've moved to the cf-python-copy environment, install packages from the “requirements.txt” file by running the command `pip install -r requirements.txt`.
 
 ### Create a GitHub Repository
+Create a new GitHub Repository for the Achievement.
