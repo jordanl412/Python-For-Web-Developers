@@ -11,7 +11,7 @@
 ### Install Python
 First, install Python on your system. Check your Python version by running the command `python3 --version` in the Terminal.
 
-![Step 1](./"Exercise 1.1"/Screenshots/"step 1 python version.png")
+![Step 1](./Exercise1.1/Screenshots/step_1_python_version.png)
 
 ### Set Up a Virtual Environment
 Set up a new virtual environment named "cf-python-base" by running the command `mkvirtualenv cf-python-base` in the Terminal.
