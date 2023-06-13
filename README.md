@@ -1,5 +1,9 @@
 # Python For Web Developers
 
+## Exercises
+1. [Exercise 1](#exercise-1)
+2. [Exercise 2](#exercise-2)
+
 ## Exercise 1
 1. [Install Python](#install-python)
 2. [Set Up a Virtual Environment](#set-up-a-virtual-environment)
@@ -77,7 +81,7 @@ Create 4 more recipes (`recipe_2`, `recipe_3`, `recipe_4`, and `recipe_5`), an a
 
 ![Step 4](./Exercise1.2/step4_add_recipes.png)
 
-### Print List of Ingredients
+### Print Lists of Ingredients
 Print the ingredients of each recipe as five different lists.
 
 ![Step 5](./Exercise1.2/step5_print_ingredients.png)
