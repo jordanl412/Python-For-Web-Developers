@@ -3,6 +3,7 @@
 ## Exercises
 1. [Exercise 1](#exercise-1)
 2. [Exercise 2](#exercise-2)
+3. [Exercise 3](#exercise-3)
 
 ## Exercise 1
 1. [Install Python](#install-python)
@@ -85,4 +86,72 @@ Create 4 more recipes (`recipe_2`, `recipe_3`, `recipe_4`, and `recipe_5`), an a
 Print the ingredients of each recipe as five different lists.
 
 ![Step 5](./Exercise1.2/step5_print_ingredients.png)
+
+## Exercise 3
+1. [Create a New Python Script](#create-a-new-python-script)
+2. [Create Empty Lists](#create-empty-lists)
+3. [Define take_recipe Function](#define-take-recipe-function)
+4. [Ask How Many Recipes](#ask-how-many-recipes)
+5. [Check Ingredients For Loop](#check-ingredients-for-loop)
+6. [Assign Difficulty Levels For Loop](#assign-difficulty-levels-for-loop)
+7. [Display All Ingredients](#display-all-ingredients)
+
+### Create a New Python Script
+Open a Python script in an editor of your choice and name it “Exercise_1.3.py”.
+
+![Step 1](./Exercise1.3/step_1.png)
+
+### Create Empty Lists
+Initialize two empty lists: `recipes_list` and `ingredients_list`.
+
+![Step 2](./Exercise1.3/step_2.png)
+
+### Define take_recipe Function
+Define a function called `take_recipe`, which takes input from the user for the following variables:
+- `name` (str): Stores the name of the recipe.
+- `cooking_time` (int): Stores the cooking time (in minutes).
+- `ingredients` (list): A list that stores ingredients, each of the string data type.
+- `recipe` (dictionary): Stores the `name`, `cooking_time`, and `ingredients` variables
+
+![Step 3](./Exercise1.3/step_3.png)
+
+### Ask How Many Recipes
+In the main section of your code, ask the user how many recipes they would like to enter. Their response will be linked to a variable `n`.
+
+![Step 4](./Exercise1.3/step_4.png)
+
+### Check Ingredients For Loop
+Run a `for` loop, which runs `n` times to perform the following steps:
+- Run `take_recipe()` and store its return output (a dictionary) in a variable called `recipe`.
+- Run another `for` loop inside this loop, which iterates through `recipe`'s `ingredients` list, where it picks out elements one-by-one as `ingredient`. It will run the following step inside: if the chosen `ingredient` isn't present in `ingredients_list`, add it to this list.
+- Once you've finished adding ingredients, append `recipe` to `recipes_list`.
+
+![Step 5](./Exercise1.3/step_5.png)
+
+### Assign Difficulty Levels For Loop
+Run another `for` loop that iterates through `recipes_list`, picks out each element (a dictionary) as `recipe`, and performs the following steps:
+- Determine the `difficulty` of the recipe using the following logic:
+  * If  `cooking_time` is less than 10 minutes, and the number of `ingredients` is less than 4, set a variable called `difficulty` to the value of `Easy`.
+  * If  `cooking_time` is less than 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Medium`.
+  * If  `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is less than 4, set a variable called `difficulty` to the value of `Intermediate`.
+  * If  `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Hard`.
+- Display the recipe in the following format, using values from each dictionary (`recipe`) obtained from `recipes_list`:
+  `Recipe: Instant Noodles
+  Cooking Time (min): 5
+  Ingredients:
+  Noodle Cakes
+  Flavoring
+  Water
+  Difficulty level: Easy`
+
+![Step 6](./Exercise1.3/step_6.png)
+
+### Display All Ingredients
+Next, you’ll have to display all the ingredients that you’ve come across so far in all of the recipes that you’ve just entered. In Step 5 you appended these ingredients into `ingredient_list`. Now it’s time to print them all out. Print them in alphabetical order.
+
+![Step 7](./Exercise1.3/step_7.png)
+
+
+
+
 
