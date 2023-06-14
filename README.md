@@ -90,7 +90,7 @@ Print the ingredients of each recipe as five different lists.
 ## Exercise 3
 1. [Create a New Python Script](#create-a-new-python-script)
 2. [Create Empty Lists](#create-empty-lists)
-3. [Define take_recipe Function](#define-take-recipe-function)
+3. [Define Recipe Function](#define-recipe-function)
 4. [Ask How Many Recipes](#ask-how-many-recipes)
 5. [Check Ingredients For Loop](#check-ingredients-for-loop)
 6. [Assign Difficulty Levels For Loop](#assign-difficulty-levels-for-loop)
@@ -106,7 +106,7 @@ Initialize two empty lists: `recipes_list` and `ingredients_list`.
 
 ![Step 2](./Exercise1.3/step_2.png)
 
-### Define take_recipe Function
+### Define Recipe Function
 Define a function called `take_recipe`, which takes input from the user for the following variables:
 - `name` (str): Stores the name of the recipe.
 - `cooking_time` (int): Stores the cooking time (in minutes).
@@ -136,13 +136,10 @@ Run another `for` loop that iterates through `recipes_list`, picks out each elem
   * If  `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is less than 4, set a variable called `difficulty` to the value of `Intermediate`.
   * If  `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Hard`.
 - Display the recipe in the following format, using values from each dictionary (`recipe`) obtained from `recipes_list`:
-  `Recipe: Instant Noodles
-  Cooking Time (min): 5
-  Ingredients:
-  Noodle Cakes
-  Flavoring
-  Water
-  Difficulty level: Easy`
+  * Recipe:
+  * Cooking Time (min):
+  * Ingredients:
+  * Difficulty level:
 
 ![Step 6](./Exercise1.3/step_6.png)
 
