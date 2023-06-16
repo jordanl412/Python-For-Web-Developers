@@ -7,7 +7,7 @@ def take_recipe():
     ingredients = []
     while True:
         ingredient = input('Enter an ingredient (enter "done" if you have finished): ')
-        if ingredient = 'done':
+        if ingredient == 'done':
             break
         else:
             ingredients.append(ingredient)
@@ -24,14 +24,18 @@ for r in range(n):
     recipes_list.append(recipe)
 
 for recipe in recipes_list:
-    if recipe['cooking_time'] < 10 and len(recipe['ingredients']) < 4:
-        recipe['difficulty'] = 'Easy'
-    elif recipe['cooking_time'] < 10 and len(recipe['ingredients']) >= 4:
-        recipe['difficulty'] = 'Medium'
-    elif recipe['cooking_time'] >= 10 and len(recipe['ingredients']) < 4:
-        recipe['difficulty'] = 'Intermediate'
+    cooking_time = recipe['cooking_time']
+    num_ingredients = len(recipe['ingredients'])
+    difficulty = recipe['difficulty']
+
+    if cooking_time < 10 and num_ingredients < 4:
+        difficulty = 'Easy'
+    elif cooking_time < 10 and num_ingredients >= 4:
+        difficulty = 'Medium'
+    elif cooking_time >= 10 and num_ingredients < 4:
+        difficulty = 'Intermediate'
     else:
-        recipe['difficulty'] = 'Hard'
+        difficulty = 'Hard'
 
 for recipe in recipes_list:
     print('Recipe: ', recipe['name'])
