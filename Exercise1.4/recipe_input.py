@@ -30,11 +30,10 @@ def take_recipe():
     return recipe
 
 #Define function to calculate recipe difficulty
-def calc_difficulty():
+def calc_difficulty(recipe):
     cooking_time = recipe['cooking_time']
     num_ingredients = len(recipe['ingredients'])
-    difficulty = recipe['difficulty']
-
+    
     if cooking_time < 10 and num_ingredients < 4:
         difficulty = 'Easy'
     elif cooking_time < 10 and num_ingredients >= 4:
@@ -65,7 +64,7 @@ finally:
     all_ingredients = data['all_ingredients']
 
 #Get number of recipes to add from user
-n = int(value('Enter the number of recipes you\'d like to add: '))
+n = int(input('Enter the number of recipes you\'d like to add: '))
 
 #Take recipes and append to recipes_list
 for i in range(n):
