@@ -291,10 +291,10 @@ Define a class `Recipe`, with the following data attributes:
 - `ingredients`: a list containing the ingredients for a recipe
 - `cooking_time`: the time taken in minutes to carry out a recipe
 - `difficulty`: an auto-generated attribute that says whether the recipe is `Easy`, `Medium`, `Intermediate`, or `Hard` based on the following logic (this attribute will be updated by the upcoming `calculate_difficulty()` class method):
-* If `cooking_time` is less than 10 minutes, and the number of `ingredients` is less than 4, set a variable called difficulty to the value of `Easy`.
-* If `cooking_time` is less than 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Medium`.
-* If `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is less than 4, set a variable called `difficulty` to the value of `Intermediate`.
-* If `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Hard`.
+  * If `cooking_time` is less than 10 minutes, and the number of `ingredients` is less than 4, set a variable called difficulty to the value of `Easy`.
+  * If `cooking_time` is less than 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Medium`.
+  * If `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is less than 4, set a variable called `difficulty` to the value of `Intermediate`.
+  * If `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Hard`.
 
 ![Step 1](./Exercise1.5/step_1.png)
 
