@@ -368,7 +368,32 @@ Use the `recipe_search()` method to search for recipes that contain each ingredi
 2. [The Main Menu](#the-main-menu)
 3. [Creating a Recipe with create_recipe()](#creating-a-recipe-with-create_recipe())
 
-3. Creating a Recipe with create_recipe()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Creating a Recipe with create_recipe()
 
 
 
