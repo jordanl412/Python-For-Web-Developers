@@ -6,6 +6,7 @@
 3. [Exercise 3](#exercise-3)
 4. [Exercise 4](#exercise-4)
 5. [Exercise 5](#exercise-5)
+6. [Exercise 6](#exercise-6)
 
 ## Exercise 1
 1. [Install Python](#install-python)
@@ -361,6 +362,15 @@ Use the `recipe_search()` method to search for recipes that contain each ingredi
 
 ![Final Step 1](./Exercise1.5/final_step_1.png)
 ![Final Step 2](./Exercise1.5/final_step_2.png)
+
+## Exercise 6
+1. [Create & Connect Database](#create-&-connect-database)
+2. [The Main Menu](#the-main-menu)
+3. [Creating a Recipe with create_recipe()](#creating-a-recipe-with-create_recipe())
+
+3. Creating a Recipe with create_recipe()
+
+
 
 
 
