@@ -5,6 +5,7 @@
 2. [Exercise 2](#exercise-2)
 3. [Exercise 3](#exercise-3)
 4. [Exercise 4](#exercise-4)
+5. [Exercise 5](#exercise-5)
 
 ## Exercise 1
 1. [Install Python](#install-python)
@@ -274,8 +275,92 @@ Run “recipe_search.py”, enter the ingredient to be searched for, and make su
 
 ![Step 2](./Exercise1.4/part_3_step_2.png)
 
+## Exercise 5
+1. [Define Recipe Class](#define-recipe-class)
+2. [Define Class Attributes and Methods](#define-class-attributes-and-methods)
+3. [Define Recipe Search Method](#define-recipe-search-method)
+4. [Make First Recipe Object](#make-first-recipe-object)
+5. [Make More Recipe Objects](#make-more-recipe-objects)
+6. [Wrap Recipes in a List](#wrap-recipes-in-a-list)
+7. [Use Recipe Search Method](#use-recipe-search-method)
+8. [Run the Script](#run-the-script)
 
+### Define Recipe Class
+Define a class `Recipe`, with the following data attributes:
+- `name`: the name of a recipe
+- `ingredients`: a list containing the ingredients for a recipe
+- `cooking_time`: the time taken in minutes to carry out a recipe
+- `difficulty`: an auto-generated attribute that says whether the recipe is `Easy`, `Medium`, `Intermediate`, or `Hard` based on the following logic (this attribute will be updated by the upcoming `calculate_difficulty()` class method):
+  * If `cooking_time` is less than 10 minutes, and the number of `ingredients` is less than 4, set a variable called difficulty to the value of `Easy`.
+  * If `cooking_time` is less than 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Medium`.
+  * If `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is less than 4, set a variable called `difficulty` to the value of `Intermediate`.
+  * If `cooking_time` is greater than or equal to 10 minutes, and the number of `ingredients` is greater than or equal to 4, set a variable called `difficulty` to the value of `Hard`.
 
+![Step 1](./Exercise1.5/step_1.png)
+
+### Define Class Attributes and Methods
+Define the following procedural attributes (methods) for the class as well:
+- An initialization method that takes in the `name` for the recipe and initializes the other data attributes too. Getter and setter methods for `name` and `cooking_time`.
+- A method called `add_ingredients` that takes in variable-length arguments for the recipe’s ingredients. For example, the arguments could be either `("Salt")` or even `("Salt", "Pepper", "Flour", "Water", "Bananas", "Marzipan")`; your method should take in these ingredients and add them to `ingredients`. Once all the ingredients are added, this function calls `update_all_ingredients()` , which you’ll define shortly.
+- A getter method for `ingredients` that returns the list itself.
+- A method called `calculate_difficulty()` that uses the logic in part 1 of this task, and updates the difficulty of the recipe.
+- A getter method for `difficulty` which also calls `calculate_difficulty()` if `difficulty` hasn’t been calculated.
+- A search method called `search_ingredient()` that takes an ingredient as an argument, searches for it in the recipe, and returns `True` or `False` appropriately.
+- A method called `update_all_ingredients()` that goes through the current object’s ingredients and adds them to a class variable called `all_ingredients`, if they’re not already present. This class variable keeps track of all the ingredients that exist across all recipes.
+- A string representation that prints the entire recipe over a well formatted string.
+
+![Step 2a](./Exercise1.5/step_2a.png)
+![Step 2b](./Exercise1.5/step_2b.png)
+![Step 2c](./Exercise1.5/step_2c.png)
+
+### Define Recipe Search Method
+To find recipes that contain a specific ingredient, define a method called `recipe_search()`:
+- Define 2 parameters for this method:
+  * `data`: takes in a list of `Recipe` objects to search from
+  * `search_term`: the ingredient to be searched for
+- Run a `for` loop that traverses through `data`, and performs the following steps:
+  * Within the object that is in focus, call the `search_ingredient` method to see if the ingredient is present or not.
+  * If the above condition is satisfied, print the recipe.
+
+ ![Step 3](./Exercise1.5/step_3.png)
+ 
+### Make First Recipe Object
+In the main code, make an object under the `Recipe` class:
+- Initialize an object named `tea` under this class, and set the recipe’s name as `"Tea"` through the initialization step.
+- Add the following ingredients to this recipe: `Tea Leaves`, `Sugar`, `Water`.
+- Set the cooking time for this recipe as `5` (in minutes).
+- Display the string representation of this object.
+
+![Step 4](./Exercise1.5/step_4.png)
+
+### Make More Recipe Objects
+Make a few more recipes with the given attributes, and display their respective string representations as well:
+- `Coffee`:
+  * `Ingredients`: Coffee Powder, Sugar, Water
+  * `Cooking time`: 5 minutes
+- `Cake`:
+  * `Ingredients`: Sugar, Butter, Eggs, Vanilla Essence, Flour, Baking Powder, Milk
+  * `Cooking time`: 50 minutes
+- `Banana Smoothie`:
+  * `Ingredients`: Bananas, Milk, Peanut Butter, Sugar, Ice Cubes
+  * `Cooking time`: 5 minutes
+
+![Step 5](./Exercise1.5/step_5.png)
+
+### Wrap Recipes in a List
+Wrap the recipes into a list called `recipes_list`.
+
+![Step 6](./Exercise1.5/step_6.png)
+
+### Use Recipe Search Method
+Use the `recipe_search()` method to search for recipes that contain each ingredient out of: `Water`, `Sugar`, `Bananas`.
+
+![Step 7](./Exercise1.5/step_7.png)
+
+### Run the Script
+
+![Final Step 1](./Exercise1.5/final_step_1.png)
+![Final Step 2](./Exercise1.5/final_step_2.png)
 
 
 
