@@ -364,12 +364,12 @@ Use the `recipe_search()` method to search for recipes that contain each ingredi
 ![Final Step 2](./Exercise1.5/final_step_2.png)
 
 ## Exercise 6
-1. [Create & Connect Database](#create-&-connect-database)
+1. [Create and Connect Database](#create-and-connect-database)
 2. [The Main Menu](#the-main-menu)
-3. [Creating a Recipe with create_recipe()](#creating-a-recipe-with-create_recipe())
-4. [Searching for a Recipe with search_recipe()](#searching-for-a-recipe-with-search_recipe())
-5. [Updating a Recipe with update_recipe()](#updating-a-recipe-with-update_recipe())
-6. [Deleting a Recipe with delete_recipe()](#deleting-a-recipe-with-delete_recipe())
+3. [Creating a Recipe with create recipe function](#creating-a-recipe-with-create_recipe())
+4. [Searching for a Recipe with search recipe function](#searching-for-a-recipe-with-search-recipe-function)
+5. [Updating a Recipe with update recipe function](#updating-a-recipe-with-update-recipe-function)
+6. [Deleting a Recipe with delete recipe function](#deleting-a-recipe-with-delete-recipe-function)
 7. [Final Steps](#final-steps)
 
 ### Create & Connect Database
