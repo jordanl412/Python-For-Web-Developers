@@ -366,7 +366,7 @@ Use the `recipe_search()` method to search for recipes that contain each ingredi
 ## Exercise 6
 1. [Create and Connect Database](#create-and-connect-database)
 2. [The Main Menu](#the-main-menu)
-3. [Creating a Recipe with create recipe function](#creating-a-recipe-with-create_recipe())
+3. [Creating a Recipe with create recipe function](#creating-a-recipe-with-create-recipe-function)
 4. [Searching for a Recipe with search recipe function](#searching-for-a-recipe-with-search-recipe-function)
 5. [Updating a Recipe with update recipe function](#updating-a-recipe-with-update-recipe-function)
 6. [Deleting a Recipe with delete recipe function](#deleting-a-recipe-with-delete-recipe-function)
