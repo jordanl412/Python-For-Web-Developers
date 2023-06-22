@@ -372,7 +372,7 @@ Use the `recipe_search()` method to search for recipes that contain each ingredi
 6. [Deleting a Recipe with delete recipe function](#deleting-a-recipe-with-delete-recipe-function)
 7. [Final Steps](#final-steps)
 
-### Create & Connect Database
+### Create and Connect Database
 Before you visualize anything to the user, you should connect your “recipe_mysql.py” script to your MySQL server:
 1. First, import the `mysql.connector` module.
 
@@ -426,7 +426,7 @@ Once you've defined the `main_menu()` function, call it in the main code. Pass `
 
 ![Part 2](./Exercise1.6/part2.png)
 
-### Creating a Recipe with create_recipe()
+### Creating a Recipe with create recipe function
 1. First, collect the following details for a recipe entry:
    - `name`: Name of the recipe, string type.
    - `cooking_time`: Cooking time of the recipe in minutes, integer type.
@@ -454,7 +454,7 @@ Once you've defined the `main_menu()` function, call it in the main code. Pass `
 
 ![Part 3 Step 4](./Exercise1.6/part3_step4.png)
 
-### Searching for a Recipe with search_recipe()
+### Searching for a Recipe with search recipe function
 1. You need to begin with an entire list of ingredients that is available in the `Recipes` table for the user to choose from. Obtain this list by `SELECT`-ing only the `ingredients` column from your table. Store the output into a variable called `results`.
 
 ![Part 4 Step 1](./Exercise1.6/part4_step1.png)
@@ -475,7 +475,7 @@ Use this logic to build your query, fetch the results that satisfy this conditio
 
 ![Part 4 Step 4](./Exercise1.6/part4_step4.png)
 
-### Updating a Recipe with update_recipe()
+### Updating a Recipe with update recipe function
 1. In this function, you’ll first fetch all the recipes that are present on the database and list them to the user. The user will then pick a recipe to be updated by specifying its corresponding `id`, after which the script will ask for the column to be updated for that recipe. The columns available for modification are `name`, `cooking_time` and `ingredients`.
 
 ![Part 5 Step 1](./Exercise1.6/part5_step1.png)
@@ -486,7 +486,7 @@ Use this logic to build your query, fetch the results that satisfy this conditio
 
 ![Part 5 Steps 2-4](./Exercise1.6/part5_steps2_through_4.png)
 
-### Deleting a Recipe with delete_recipe()
+### Deleting a Recipe with delete recipe function
 1. This function will display every recipe in your table to the user, where they can pick one by its `id` for deletion.
 2. Build a query using the `DELETE` statement, where the row to be deleted is identified by the `id` that the user had specified.
 3. Execute this query and commit your changes to the table.
