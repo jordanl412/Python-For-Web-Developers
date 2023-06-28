@@ -529,7 +529,7 @@ Use this logic to build your query, fetch the results that satisfy this conditio
 2. [Create Your Model and Table](#create-your-model-and-table)
 3. [Define Your Main Operations as Functions](#define-your-main-operations-as-functions)
 4. [Design Your Main Menu](#design-your-main-menu)
-5. [Final Steps](#final-steps)
+5. [Final Steps Testing](#final-steps-testing)
 
 ### Set Up Your Script and SQLAlchemy
 1. Open a script file called `recipe_app.py`.
@@ -676,7 +676,7 @@ Store your declarative base class into a variable called `Base`. Then, begin you
 
   ![Part 4 Step 2-3](./Exercise1.7/part4_step2-3.png)
 
-  ### Final Steps
+  ### Final Steps Testing
   1. Create a few recipes of your own through your application
 
   ![Part 5 New Recipe](./Exercise1.7/part5_new_recipe.png)
