@@ -1,0 +1,10 @@
+Task 2.5
+
+Models Updates:
+
+* Ingredients
+    - Added pic attribute
+
+* Recipes
+    - Added pic attribute
+    - Added category attribute (and category choices)
