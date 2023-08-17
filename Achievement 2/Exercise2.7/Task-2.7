@@ -1,0 +1,79 @@
+Search for Recipes
+
+    * What users want to search for:
+        - Name of Recipe
+        - Category of Recipe
+        - Cooking Time
+        - Ingredient
+
+    * Format of output:
+        - Filtered list of recipes that match the search criterion
+
+Data Analysis - Cooking Time
+
+    * Bar Chart
+
+        - X-axis: Recipe Name
+        - Y-axis: Cooking Time
+
+    * Pie Chart
+
+        - Breakdown of recipes' cooking times
+
+    * Line Chart
+
+        - X-axis: Recipe Name
+        - Y-axis: Cooking Time
+
+Execution Flow
+
+    1. User goes to Recipe App homepage
+    2. User logs in
+    3. User sees list of recipes
+    4. User clicks a specific recipe to see a 
+    detailed view of the recipe
+    OR 
+    4. User searches for a recipe or recipe category, 
+    chooses a chart type, and is shown 
+    the cooking time in chart Format
+    5. User logs out
+
++------------------+
+|                  |
+|     Homepage     |
+|                  |
++------------------+
+         |
+         |  Click login button
+         |
++------------------+
+|                  |
+|    Login Page    |
+|                  |
++------------------+   
+         |
+         |  Click Login
+         |
++------------------+                 +------------------+
+|                  |      Click      |                  |
+|     List of      | "Search Recipe  |      Search      |
+|     Recipes      |     Records"    |  Recipe Records  |
+|                  |-----------------|                  |
++------------------+                 +------------------+
+         |                                     |
+         |  Click specific recipe              |  Click Logout
+         |                                     |
++------------------+                 +------------------+
+|                  |                 |                  |
+|      Recipe      |                 |      Logout      |
+|      Details     |                 |                  |
+|                  |                 +------------------+
++------------------+                 
+         |
+         |  Click Logout
+         |
++------------------+
+|                  |
+|      Logout      |
+|                  |
++------------------+ 
